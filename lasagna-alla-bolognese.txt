@@ -1,0 +1,27 @@
+Preparare le lasagne alla bolognese
+
+1(Controllo Ingredienti)
+1.1stabilisci il numero di ingredienti sulla lista !=0.
+1.2controlla uno alla volta tutti gli ingredienti a tua disposizione
+1.3a Se Ingrediente è presente nella lista, allora
+(Lista-1) e metto da parte l'ingrediente.
+1.3b Altrimenti lo rimetto a posto in dispensa.
+
+2(Controllo quantita)
+2.1 Stabilisco il numero di ingredienti da pesare!=0
+2.2 prendi una parte dell'ingrediente
+2.3 confronto il peso dell'ingrediente con quello richiesto dalla ricetta
+2.4a Se peso-ingrediente = a peso-ricetta,metto in un contenitore ingrediente per poi usarlo ricetta e numeroingredienti-1, allora posso passare al prossimo ingrediente
+2.4b Altrimenti se peso-ingrediente != peso-ricetta, ricomincia dal punto 2.2
+
+3(Controllo cotture)
+3.1 Stabilisci i tempi di cottura delle varie preparazioni che coinvolgono i vari ingredienti
+3.2 Divido gli ingredienti in preparazioni e confronto il tempo di cottura con gli altri tempi di cottura
+3.3a Se Maggiore di tutti,(Se a>b and a>c and a>d and a>e [esempio]) allora Scrivo come prima cottura da fare la preparazione con il mio ingrediente attuale,lo cancello dalla lista e passo al prossimo
+3.3b Altrimenti se il mio ingrediente non è maggiore di tutti, allora lo poso, e prendo un altro ingrediente e ricomincio dal punto 3.2
+
+4(Controllo metodi di cottura)
+4.1 Stabilisci quali sono le modalita di cottura per queste preparazioni
+4.2 Confronta le modalita possibili con quella richiesta dalla ricetta
+4.3a Se possibile e ricetta sono uguali, allora inizio la mia cottura e punto il timer,quando il timer è finito, la cottura è Conclusa ed è pronto
+4.3b altrimenti Cancello il metodo di cottura e passo al successivo. e torno al 4.2
